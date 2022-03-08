@@ -2,25 +2,26 @@ import styled from "styled-components";
 
 export const Feed = styled.div `
   width: 100%;
-  max-width: 60rem;
+  /* max-width: 60rem; */
   height: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  color: var(--text-color);
+  padding: 0 1rem;
+  color: ${props => props.theme.Colors.textColor};
 
   .header-feed {
     width: 100%;
     padding: 2rem;
-    background-color: var(--bg-cards);
-    border-radius: var(--border-radius);
+    background-color: ${props => props.theme.Colors.cards};
+    border-radius: ${props => props.theme.borderRadius};
     display: flex;
     justify-content: space-between;
   }
 
   a {
     text-decoration: none;
-    color: var(--text-color);
+    color: ${props => props.theme.Colors.textColor};
     font-size: 0.8rem;
   }
 
@@ -32,11 +33,12 @@ export const Feed = styled.div `
 
 export const Container = styled.section `
   width: 100%;
-  max-width: 60rem;
+  max-width: 55.5rem;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  color: var(--text-color);
+  /* flex-wrap: wrap; */
+  gap: 1rem;
+  color: ${props => props.theme.Colors.textColor};
 `
 
 

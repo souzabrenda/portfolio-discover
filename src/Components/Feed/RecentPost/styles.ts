@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const RecentPost = styled.div `
   width: 100%;
   height: max-content;
-  background-color: var(--bg-cards);
-  color: var(--text-color);
+  background-color: ${props => props.theme.Colors.cards};
+  color: ${props => props.theme.Colors.textColor};
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  border-radius: var(--border-radius);
+  border-radius: ${props => props.theme.borderRadius};
   padding: 1rem;
   gap: 1.5rem;
 

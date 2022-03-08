@@ -14,12 +14,12 @@ export const Profile = styled.section `
   height: max-content;
   padding: 2rem;
   gap: 0.3rem;
-  background-color: var(--bg-cards);
-  color: var(--text-color);
+  background-color: ${props => props.theme.Colors.cards};
+  color: ${props => props.theme.Colors.textColor};
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-radius: var(--border-radius);
+  border-radius: ${props => props.theme.borderRadius};
   font-size: 1.2rem;
 
 
@@ -28,7 +28,7 @@ export const Profile = styled.section `
     width: 8rem;
     height: 8rem;
     border-radius: 62px;
-    border: 8px solid #00FF00;
+    border: 8px solid ${props => props.theme.Colors.textColor};
     margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
@@ -52,11 +52,11 @@ export const Informations = styled.section `
   max-width: 20rem;
   height: max-content;
   padding: 2rem;
-  background-color: var(--bg-cards);
-  color: var(--text-color);
+  background-color: ${props => props.theme.Colors.cards};
+  color:${props => props.theme.Colors.textColor};
   display: flex;
   align-items: center;
-  border-radius: var(--border-radius);
+  border-radius: ${props => props.theme.borderRadius};
 
   ul {
     text-decoration: none;
@@ -71,12 +71,12 @@ export const Tecnologies = styled.section `
   height: max-content;
   padding: 2rem;
   gap: 0.3rem;
-  background-color: var(--bg-cards);
-  color: var(--text-color);
+  background-color: ${props => props.theme.Colors.cards};
+  color: ${props => props.theme.Colors.textColor};
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  border-radius: var(--border-radius);
+  border-radius: ${props => props.theme.borderRadius};
 
   strong {
     font-size: 1.3rem;
@@ -87,7 +87,7 @@ export const Tecnologies = styled.section `
     padding: 0.8rem 0;
     text-decoration: none;
     list-style-type: none;
-    color: var(--text-color);
+    color: ${props => props.theme.Colors.textColor};
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -101,20 +101,19 @@ export const DotedList = styled.section `
   width: 100%;
   height: max-content;
   padding: 2rem;
-  /* gap: 0rem; */
-  background-color: var(--bg-cards);
-  color: var(--text-color);
+  background-color: ${props => props.theme.Colors.cards};
+  color: ${props => props.theme.Colors.textColor};
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  border-radius: var(--border-radius);
+  border-radius: ${props => props.theme.borderRadius};
 
   strong {
     font-size: 1.3rem;
   }
 
   ul {
-    color: var(--text-color);
+    color: ${props => props.theme.Colors.textColor};
   }
 
  

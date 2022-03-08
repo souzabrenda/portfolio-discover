@@ -2,16 +2,22 @@ import styled from "styled-components";
 
 export const ProjectItem = styled.div `
   width: 100%;
-  max-width: 30rem;
+  max-width: 20rem;
+  min-width: 50%;
+  /* flex-wrap: wrap; */
   height: max-content;
-  padding: 2rem 1rem;
-  gap: 1.5rem;
-  background-color: var(--bg-cards);
-  color: var(--text-color);
+  padding: 2rem 0.8rem; 
+  gap: 1rem;
+  background-color: ${props => props.theme.Colors.cards};
+  color: ${props => props.theme.Colors.textColor};
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-radius: var(--border-radius);
+  border-radius: ${props => props.theme.borderRadius};
+
+  span {
+    color: #888 ;
+  }
 
   .header-project {
     width: 100%;
@@ -23,14 +29,15 @@ export const ProjectItem = styled.div `
   .description {
     width: 100%;
     font-size: 0.8rem;
-    font-weight: 400;
+    font-weight: 300;
   }
 
   .footer-project {
     width: 100%;
     display: flex;
-    gap: 1rem;
-    justify-content: space-between;
+    font-size: 0.7rem;
+    justify-content: flex-end;
+
   }
   
   .f-j {
@@ -39,12 +46,13 @@ export const ProjectItem = styled.div `
     gap: 0.8rem;
   }
   
-  .last-child {
+  /* .last-child {
+    width: 100%;
+    max-width: 10rem;
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
-    gap: 0.4rem;
-  }
+
+  } */
 
   .mini-item {
     width: max-content;

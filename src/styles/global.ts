@@ -32,7 +32,7 @@ body {
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  background-color: var(--body-bg-color);
+  background-color: ${props => props.theme.Colors.bodyColor};
 }
 `
 

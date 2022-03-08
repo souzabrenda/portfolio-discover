@@ -11,7 +11,7 @@ export const InformationItem = styled.li `
 
   a {
     text-decoration: none;
-    color: var(--text-color);
+    color: ${props => props.theme.Colors.textColor};
     
   }
 `
